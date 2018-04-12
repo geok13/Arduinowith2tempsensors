@@ -22,6 +22,6 @@ worked with my I2C LCD but may not work with others. In that case you have to se
 #define D5_pin  1
 #define D6_pin  2
 #define D7_pin  3
-You can try these if the first don't work.
+You can try these if the first don't work. You can also change the sampling rate by changing the delay(29000) value.
 
 George Kountouriotis
