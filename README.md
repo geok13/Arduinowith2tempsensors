@@ -1,6 +1,7 @@
 # Arduinowith2tempsensors
 Files needed for connecting two DS18B20 temperature sensors to Arduino and LCD I2C screen.
 In order to work with the Arduino IDE, each file should be put in a folder with the same name.
+Before running the files in Arduino IDE, the following libraries should be installed: Wire.h, OneWire.h, DallasTemperature.h, LiquidCrystal_I2C.h
 The file DS18B20OneWireAddress is useful for finding the one-wire address of each of the DS18B20 sensors that should be put in lines 34 &  35 of the file TwoTempSensorsonSerial (instead of 0x28, 0xFF, 0x06, 0x0E, 0x63, 0x16, 0x03, 0x024 and 0x28, 0xFF, 0xBC, 0xE5, 0x62, 0x16, 0x04, 0x23).
 The file I2C_AddressofLCD is useful for finding the one-wire address of the LCD I2C screen that should be put in line 30 of the file TwoTempSensorswithLCD (instead of 0x3F).
 The file TwoTempSensorsonSerial prints the temperatures that the sensors read in the serial screen. The sampling rate can be set by changing the delay(20000) where the 20000 is in milliseconds. 
